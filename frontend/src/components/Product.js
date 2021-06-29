@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Rating from "./Rating";
+import { Link } from "react-router-dom"; // As its a sigle page application Link will allow us to navigate through the page with having to reload the entire page. As opposed to using <a> tag for our links, we use <Link> which take in a 'to' attribute as opposed to a href in <a> tag.
 
 const Product = ({ product }) => {
   {
@@ -12,17 +13,17 @@ const Product = ({ product }) => {
   return (
     <Card className="my-3 p-3 rounded">
       {/** We wrap the product image inside of a link - but when the react router is implamented it will be a link tag instead of an a tag - If you see the id changes each time in the url link if you click on the picture.  */}
-      <a href={`/product/${product._id}`}>
+      <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} variant="top" />
         {/**  variant -top allows us to place image in different areas */}
-      </a>
+      </Link>
       <Card.Body>
-        <a href={`/product/${product._id}`}>
+        <Link to={`/product/${product._id}`}>
           <Card.Title as="div">
             {/** as="div" is where we can choose the element type for this Card.Title component */}
             <strong> {product.name} </strong>
           </Card.Title>
-        </a>
+        </Link>
         <Card.Text as="div">
           {/** Rating takes in two props */}
           <Rating
