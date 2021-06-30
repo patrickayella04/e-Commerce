@@ -1,6 +1,6 @@
 // Step 1. This fill while in test stage was placed in the frontend folder for access. Hard coded products, with an array of objects containing name/value pairs and urls that are found in the 'images/publics' folder.
 
-// Step. 2 this fill will then be moved to a backend folder that will be served in express in our backend set up. This way from React/frontend we will fetch data from our bakend. We first create a folder in the route called backend. We then initialize package.json & node_modules, but not in the backend folder, but in the root folder(e-commerce), for the server. npm init, entry point: (inde.js) server.js. Then install express . npm i express in the root. Create a data folder in the backend and copy and paste this products.js file into it.
+// Step. 2 this fill will then be moved to a backend folder that will be served in express in our backend set up. This way from React/frontend we will fetch data from our bakend. We first create a folder in the route called backend. We then initialize package.json & node_modules, but not in the backend folder, but in the root folder(e-commerce), for the server. npm init, entry point: (inde.js) server.js. Then install express . npm i express in the root. Create a data folder in the backend and copy and paste this products.js file into it. Then we create routes to serve the produds.js from the backend.
 
 const products = [
   {
