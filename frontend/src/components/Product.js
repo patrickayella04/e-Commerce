@@ -32,7 +32,7 @@ const Product = ({ product }) => {
           />
           {/** We could pass in color='red' into Rating component above, but instead of passing a color there is a default color in yellow for the stars. See in /Rating.js component below export to for default prop value */}
         </Card.Text>
-        <Card.Text as="h3">${product.price}</Card.Text>
+        <Card.Text as="h3">£{product.price}</Card.Text>
       </Card.Body>
     </Card>
   );

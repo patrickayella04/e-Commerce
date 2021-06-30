@@ -16,7 +16,7 @@ const App = () => {
         <Container>
           <Route path="/" component={HomeScreen} exact />
 
-          {/** Below We create a new file for our products as they no long show when the url changes. In screens folder we create ProductScreens.js. The url will be /product/:id  - the :id is a placeholder so it can be anything so in this application it will be looked at as the _id param(prameter)*/}
+          {/** Below We create a new file for our products as they no long show when the url changes. In screens folder we create ProductScreens.js. The url will be /product/:id  - the :id is a placeholder so it can be anything so in this application it will be looked at as the _id params(prameter)*/}
           <Route path="/product/:id" component={ProductScreen} />
         </Container>
       </main>

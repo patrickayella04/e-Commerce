@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Row with a singls column */}
         <Row>
           {/* Class name initiates css attributes, text-center puts text in the center, and py is padding on the y axis  -- all other custom styles will go in index.css file*/}
-          <Col className="text-center py-3">Copyright &copy; TopibexShop</Col>
+          <Col className="text-center py-3">Copyright &copy; Topibex-Shop</Col>
         </Row>
       </Container>
       ;

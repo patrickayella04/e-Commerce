@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header>
       {/* We changed bg to dark and also had to add varient='dark', otherwise it will dark text on a dark background ---- To move the links to the right, we changed <Nav className="mr-auto"> to <Nav className="ms-auto"> for bootstraps5  */}
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Topibex-Shop</Navbar.Brand>
+            <Navbar.Brand className="main-title">Topibex</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

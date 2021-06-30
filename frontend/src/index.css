@@ -7,3 +7,10 @@ h3 {
 .rating span {
   margin: 0.1rem;
 }
+.main-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.addToCart-button {
+  display: inline-block;
+  width: 100%;
+}
