@@ -83,4 +83,5 @@ const products = [
   },
 ];
 
-export default products;
+// export default products; -- This is ES modules syntax, and we dont yet have our backend set up for ES modules. So we change it CommonJs. Then we import it into our server using require.
+module.exports = products;
