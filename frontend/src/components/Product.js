@@ -25,12 +25,12 @@ const Product = ({ product }) => {
           </Card.Title>
         </Link>
         <Card.Text as="div">
-          {/** Rating takes in two props */}
+          {/** Rating takes in two props - value and text */}
           <Rating
             value={product.rating}
             text={`${product.numReviews} reviews`}
           />
-          {/** We could pass in color='red' into Rating component above, but instead of passing a color there is a default color in yellow for the stars. See in /Rating.js component below export to for default prop value */}
+          {/** We could pass in color='red' into Rating component above, but instead of passing a color there is a default color in yellow for the stars. See in /Rating.js component below export to see default prop value */}
         </Card.Text>
         <Card.Text as="h3">£{product.price}</Card.Text>
       </Card.Body>

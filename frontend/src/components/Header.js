@@ -1,5 +1,5 @@
 import React from "react";
-// Once we paste the navbar code from react-bootstraps site, we then have to import the components/moduals that are used coming from react-bootstraps, such as { Navbar, Nav }. We also delted the form and drop down in the code as we wont need it yet.
+// Once we paste the navbar code from react-bootstraps site, we then have to import the components/moduals that are used coming from react-bootstraps, such as { Navbar, Nav }. We also deleted the form and drop down in the code as we wont need it yet.
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap"; // We use LinkContainer from react-router-bootstap which allows us to wrap bootstrap components, but overall does the same thing as <Link> from react-router-dom.
 
