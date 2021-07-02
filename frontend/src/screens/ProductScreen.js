@@ -29,7 +29,7 @@ const ProductScreen = ({ match }) => {
       //Now we call the function fetchProducts outside of fetchProducts below.
     };
     fetchProduct();
-  }, []); // Adding a second argument to useEffect we pass in an array of dependencies - essentially anything that you want to fire off useEffect when it changes - but as for this case we fire off on load so it will be an empty array.
+  }, [match]); // Adding a second argument to useEffect we pass in an array of dependencies - essentially anything that you want to fire off useEffect when it changes - but as for this case we fire off on load so it will be an empty array. (we added match to stop the warning sign in the console saying react useEffect has a missing dependency)
 
   return (
     <>
