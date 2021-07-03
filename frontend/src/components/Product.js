@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Rating from "./Rating";
-import { Link } from "react-router-dom"; // As its a sigle page application Link will allow us to navigate through the page with having to reload the entire page. As opposed to using <a> tag for our links, we use <Link> which take in a 'to' attribute as opposed to a href in <a> tag.
+import { Link } from "react-router-dom"; // As its a single page application Link will allow us to navigate through the page with having to reload the entire page. As opposed to using <a> tag for our links, we use <Link> which take in a 'to' attribute as opposed to a href in <a> tag.
 
 const Product = ({ product }) => {
   {
